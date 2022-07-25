@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>WangYC-personal</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="王元淳 WangYC_99 西北工业大学">
+  <meta name="keywords" content="WangYC_99, Wang Yuanchun, Yuanchun Wang, WangYC, Frederick Wang, Frederick the Fox, 王元淳, wyc, NWPU, wangyuanchun">
+  <meta name="author" content="WangYC_99 wyc99@mail.nwpu.edu.cn" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon-trans.png">
+
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+</head>
+
+<body class="w3-content w3-light-gray w3-border-black" style="max-width:900px;">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-dark-gray w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <h3><b>WangYC</b></h3>
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/icon-trans.png">
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="./index.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button">Blogs</a>
+      <a href="./home.html" class="w3-bar-item w3-button">Profile</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-dark-gray w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">WangYC</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+    </div>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:150px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- The News Section -->
+    <div class="w3-container w3-padding-32 w3-margin-left" id="news">
+      <h1>Blogs</h1>
+        <p class="w3-serif">"日拱一卒，功不唐捐"——RM2021 sjtu云汉交龙战队slogan 共勉</p>
+        
+        <h2 class=""><li>2022</li></h2>
+        <p><a href="./blogPages/Knowledge-enhenced_NLG_Survey.html">【NLP】 Knowledge-enhanced-NLG综述</a></p>
+        <p><a href="./blogPages/Knowledge_Augmented.html">【NLP】 Knowledge_Augmented教程</a></p>
+        <p><a href="./blogPages/numpy手推公式实现XOR网络.html">【Deep Learning】 手推公式实现XOR网络(numpy)</a></p>
+        <p><a href="./blogPages/计算社会学知识点整理.html">【Social Computing】 计算社会学知识点整理</a></p>
+        <p><a href="./blogPages/BaselineGCN.html">【Graph】 Baseline:GCN</a></p>
+        <p><a href="./blogPages/BaselineHDGI.html">【Graph】 Baseline:HDGI</a></p>
+        <p><a href="./blogPages/BaselineDGI.html">【Graph】 Baseline:DGI</a></p>
+        <p><a href="./blogPages/BaselineHAN.html">【Graph】 Baseline:HAN</a></p>
+        <p><a href="./blogPages/Baseline_HetGNN.html">【Graph】 Baseline:HetGNN</a></p>
+        <p><a href="./blogPages/DMGI.html">【Graph】 Baseline:DMGI</a></p>
+        <p><a href="./blogPages/imdb数据集处理.html">【Graph】 数据集处理常用tips</a></p>
+        <p><a href="./blogPages/HeCo实验.html">【Graph】 HeCo实验</a></p>
+        <p><a href="./blogPages/从HeCo到Gan到InforMax.html">【Graph】 从GAN到InfoMax</a></p>
+        <p><a href="./blogPages/C++ 常用数据结构.html">【DS】 数据结构回顾整理（C++）</a></p>
+        <p><a href="./blogPages/[文章笔记] 异质图神经网络学习机制HeCo.html">【Graph】 异构图网络HeCo文章笔记</a></p>
+        <p><a href="./blogPages/【TOOL】文献管理工具与文献云备份.html">【Tool】 文献管理工具zotero与文献云备份</a></p>
+        <p><a href="./blogPages/[Tool] 云笔记 a710b.html">【Tool】 云笔记Notion使用</a></p>
+        <p><a href="./data/理论力学.pdf">【Physics】 理论力学mindmap</a></p>
+        <p><a href="./blogPages/GCN原理及实践（更新）.html">【Graph】 GCN原理及实践（v2）</a></p>
+        <p><a href="./blogPages/[Deep Learning]训练的方式以及异常处理.html">【Deep Learning】 模型训练方式以及异常处理</a></p>
+        <p><a href="./blogPages/神经网络基本结构.html">【Deep Learning】 神经网络基本结构</a></p>
+        <p><a href="./blogPages/风格对比.html">【Algorithm】 C++ C# Java风格对比</a></p>
+        <p><a href="./blogPages/哈希表+滑动窗口解决最长不重复子序列问题.html">【Algorithm】 哈希表+滑动窗口</a></p>
+        <p><a href="./blogPages/解析xlsx生成json + pyecharts可视化.html">【Graph】 pyechart实现可视化</a></p>
+        <p><a href="./blogPages/GNN原理概述.html">【Graph】 GNN原理概述</a></p>
+        <p><a href="./blogPages/GCN原理及实践.html">【Graph】 GCN原理及实践</a></p>
+
+        <h2 class=""><li>2021</li></h2>
+        <p><a href="./blogPages/Knowledge Graphcs知识图谱.html">【Knowledge Graph】 知识图谱概述 </a></p>
+        <p><a href="./blogPages/计算机操作系统知识点整理.html">【OS】 考试复习_知识点汇总 </a></p>
+        <p><a href="./blogPages/操作系统实验报告Linux.html">【OS】 课程实验_Linux资源管理 </a></p>
+        <p><a href="./data/OpenEuler部分实验记录.pdf">【OS】 课程实验_OpenEuler </a></p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/116544159">【depth camera】realsense点云数据获取并实时显示 </a></p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/115553733">【Linux】ubuntu关机重启等待90秒问题解决 </a></p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/115531471">【Linux】Ubuntu ZSH + oh-my-zsh 配置方法 </a></p>
+
+        <h2 class=""><li>2020</li></h2>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/108337029">【Git】Git基础教程</a></p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/107704158">【WX mini Program】微信开发者工具&WXML+WXSS入门教程</a></p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/107056903">【出圈】分镜制作方法</a></p>
+        <p></p>
+
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        
+      </div>
+      
+
+  <!-- Bottom Section-->
+  <div class="w3-gray w3-padding-24 w3-center" >
+    <p class="w3-opacity ">copyright©️2021 wyc99@mail.nwpu.edu.cn AllRightsReserved.</p>
+    <p class="w3-opacity "><a href="https://beian.miit.gov.cn/">冀ICP备2022000563</a>｜ Powered by w3.css</p>
+  </div>
+  
+  <script>
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
+</body>
+
+</html>

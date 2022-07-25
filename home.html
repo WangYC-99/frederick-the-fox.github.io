@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>WangYC-personal</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="王元淳 WangYC_99 西北工业大学">
+  <meta name="keywords" content="WangYC_99, Wang Yuanchun, Yuanchun Wang, WangYC, Frederick Wang, Frederick the Fox, 王元淳, wyc, NWPU, wangyuanchun">
+  <meta name="author" content="WangYC_99 wyc99@mail.nwpu.edu.cn" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon-trans.png">
+
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+</head>
+
+<body class="w3-content w3-light-gray w3-border-black" style="max-width:900px;">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-blue-gray w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <h3><b>WangYC</b></h3>
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/icon-trans.png">
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="./index.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button">Blogs</a>
+      <a href="./home.html" class="w3-bar-item w3-button">Profile</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-blue-gray w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">WangYC</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+    </div>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:150px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+
+  <!-- The Home Section -->
+  <div class="w3-container w3-center w3-padding-64" id="home">
+    <img style="width: 80%;max-width: 150px" alt="profile photo" src="images/wyc_race_new.jpg">
+    <h1>Frederick Wang</h1>
+    <h1>王元淳</h1>
+    <h5>&nbsp</h5>
+    
+    <p style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:650px">
+      &nbsp&nbsp I am an undergraduate at <a href="http://honors.nwpu.edu.cn/">Honors College</a> of <a href="http://www.nwpu.edu.cn/">Northwestern Polytechnical University</a>, Xi'an, CN where I major in Computer Science. My research interests include robot control, computer vision, AI operating system and dynamic graph. 
+    </p>
+
+    <p style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:650px">
+      &nbsp&nbsp This is a personal webset to record my projects, blogs and life. Thank you for visiting. <a class="w3-text-brown">You can follow the navigation on the left to explore more.</a>
+    </p>
+
+    <h5>&nbsp</h5>
+    <p class="w3-center">
+      <p>You can know more or contact me with:</p>
+      <p><a href="mailto:frederickwang99@gmail.com"> <img src="./images/email.jpg"> E-Mail</a></p>
+      <p><a href="https://github.com/Frederick-the-Fox"> <img style="max-height: 24px;" src="./images/github.jpg"> Github</a></p>
+      <p><a href="https://space.bilibili.com/438653209"> <img style="max-height: 24px;" src="./images/bili.png"> Bilibili</a></p>
+    </p>
+  </div>
+
+  <!-- The Saying Section -->
+  <div class="w3-container w3-center" id="home" >
+    <p>Besides, I'd like to share one of my favorite quotes with you---</p>
+    <p class="w3-serif">“My favorite things in life don’t cost any money. It’s really clear that the most precious resource we all have is time.”</p>
+    <p class="w3-serif">--- Steve Jobs</p>
+  </div>
+
+    
+
+  <!-- Bottom Section-->
+  <div class="w3-gray w3-padding-24 w3-center" >
+      <p class="w3-opacity ">copyright©️2021 wyc99@mail.nwpu.edu.cn AllRightsReserved.</p>
+      <p class="w3-opacity "><a href="https://beian.miit.gov.cn/">冀ICP备2022000563</a>｜ Powered by w3.css</p>
+  </div>
+  
+  <script>
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
+</body>
+
+</html>

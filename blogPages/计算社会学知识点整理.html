@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>计算社会学知识点整理</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=''><h1><a name="计算社会学知识点整理" class="md-header-anchor"></a><span>计算社会学知识点整理</span></h1><blockquote><p><span>by WangYC</span></p><p><span>@NWPU chang&#39;an Apr.26th 2022</span></p></blockquote><h2><a name="目录" class="md-header-anchor"></a><span>目录</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#计算社会学知识点整理">计算社会学知识点整理</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n7"><a class="md-toc-inner" href="#目录">目录</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n534"><a class="md-toc-inner" href="#chap1-绪论">Chap1 绪论</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n23"><a class="md-toc-inner" href="#计算社会学典型案例">计算社会学典型案例 </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n9"><a class="md-toc-inner" href="#chap2-图论">Chap2 图论</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n43"><a class="md-toc-inner" href="#21-人群与网络">2.1 人群与网络</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n44"><a class="md-toc-inner" href="#22-网络与图">2.2 网络与图</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n46"><a class="md-toc-inner" href="#23-路径连通图连通分量">2.3 路径、连通图、连通分量</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n48"><a class="md-toc-inner" href="#24-广度优先搜索">2.4 广度优先搜索</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n11"><a class="md-toc-inner" href="#chap3-博弈论">Chap3 博弈论</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n88"><a class="md-toc-inner" href="#31-博弈论基本概念">3.1 博弈论基本概念</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n102"><a class="md-toc-inner" href="#三要素">三要素：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n96"><a class="md-toc-inner" href="#假设">假设：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n106"><a class="md-toc-inner" href="#囚徒困境">囚徒困境：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n111"><a class="md-toc-inner" href="#兴奋剂博弈">兴奋剂博弈：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n121"><a class="md-toc-inner" href="#最佳应对">最佳应对：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n133"><a class="md-toc-inner" href="#严格最佳应对">严格最佳应对：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n146"><a class="md-toc-inner" href="#占优策略以及严格占优策略">占优策略以及严格占优策略：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n161"><a class="md-toc-inner" href="#纳什均衡">纳什均衡</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n170"><a class="md-toc-inner" href="#32-几种典型的博弈类型">3.2 几种典型的博弈类型</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n208"><a class="md-toc-inner" href="#协调博弈不对等协调博弈">协调博弈&amp;不对等协调博弈</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n175"><a class="md-toc-inner" href="#猎鹿博弈考试和报告的博弈就是一个猎鹿博弈）">猎鹿博弈：（考试和报告的博弈就是一个猎鹿博弈）</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n89"><a class="md-toc-inner" href="#鹰鸽博弈">鹰鸽博弈：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n191"><a class="md-toc-inner" href="#混合策略均衡">混合策略均衡：</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n155"><a class="md-toc-inner" href="#帕累托最优">帕累托最优</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n203"><a class="md-toc-inner" href="#社会最优">社会最优</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n91"><a class="md-toc-inner" href="#33-情景-博弈-求解">3.3 情景-&gt;博弈-&gt;求解</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n13"><a class="md-toc-inner" href="#chap4-社会网络计算">Chap4 社会网络计算</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n210"><a class="md-toc-inner" href="#41-三元闭包">4.1 三元闭包</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n233"><a class="md-toc-inner" href="#聚集系数">聚集系数</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n221"><a class="md-toc-inner" href="#42-强联系与弱联系">4.2 强联系与弱联系</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n242"><a class="md-toc-inner" href="#弱联系">弱联系</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n246"><a class="md-toc-inner" href="#强三元闭包性质">强三元闭包性质</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n255"><a class="md-toc-inner" href="#邻里重叠度">邻里重叠度</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n223"><a class="md-toc-inner" href="#43-同质现象">4.3 同质现象</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n267"><a class="md-toc-inner" href="#社会归属网络">社会归属网络</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n271"><a class="md-toc-inner" href="#图划分算法">图划分算法</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n278"><a class="md-toc-inner" href="#介数的计算方法">介数的计算方法</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n225"><a class="md-toc-inner" href="#44-正关系与负关系">4.4 正关系与负关系</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n291"><a class="md-toc-inner" href="#平衡定理">平衡定理</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n299"><a class="md-toc-inner" href="#弱平衡定理">弱平衡定理</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n227"><a class="md-toc-inner" href="#45-链接分析">4.5 链接分析</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n308"><a class="md-toc-inner" href="#中枢和权威">中枢和权威</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n311"><a class="md-toc-inner" href="#更新算法">更新算法</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n318"><a class="md-toc-inner" href="#pagerank实例">PageRank实例</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n326"><a class="md-toc-inner" href="#链接分析小结">链接分析小结</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n15"><a class="md-toc-inner" href="#chap5-市场中的计算">Chap5 市场中的计算</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n335"><a class="md-toc-inner" href="#51-匹配市场">5.1 匹配市场</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n348"><a class="md-toc-inner" href="#完美匹配">完美匹配</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n350"><a class="md-toc-inner" href="#受限组">受限组</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n355"><a class="md-toc-inner" href="#市场清仓价格的形成过程">市场清仓价格的形成过程</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n336"><a class="md-toc-inner" href="#52-网络中的议价以及权力">5.2 网络中的议价以及权力</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n338"><a class="md-toc-inner" href="#社会交换">社会交换</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n373"><a class="md-toc-inner" href="#关系的价值">关系的价值</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n378"><a class="md-toc-inner" href="#外部选项纳什议价解">外部选项&amp;纳什议价解</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n383"><a class="md-toc-inner" href="#稳定结果">稳定结果</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n388"><a class="md-toc-inner" href="#平衡结果">平衡结果</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n17"><a class="md-toc-inner" href="#chap6-网络动力学">Chap6 网络动力学</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n346"><a class="md-toc-inner" href="#61-网络中的级联行为">6.1 网络中的级联行为</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n410"><a class="md-toc-inner" href="#新事物传播的门槛">新事物传播的门槛</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n414"><a class="md-toc-inner" href="#聚簇">聚簇</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n419"><a class="md-toc-inner" href="#聚簇和级联的关系">聚簇和级联的关系：</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n403"><a class="md-toc-inner" href="#62-幂律以及富者更富现象">6.2 幂律以及富者更富现象</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n429"><a class="md-toc-inner" href="#幂律分布">幂律分布</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n441"><a class="md-toc-inner" href="#幂律的基本特征">幂律的基本特征</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n449"><a class="md-toc-inner" href="#长尾效应">长尾效应</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n454"><a class="md-toc-inner" href="#长尾效应与营销策略">长尾效应与营销策略</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n405"><a class="md-toc-inner" href="#63-小世界现象">6.3 小世界现象</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n19"><a class="md-toc-inner" href="#chap7-社交媒体挖掘与理解">Chap7 社交媒体挖掘与理解</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n474"><a class="md-toc-inner" href="#71-社交媒体挖掘基本概念">7.1 社交媒体挖掘基本概念</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n487"><a class="md-toc-inner" href="#社交媒体挖掘的挑战">社交媒体挖掘的挑战</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n475"><a class="md-toc-inner" href="#72-社交网络分析">7.2 社交网络分析</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n496"><a class="md-toc-inner" href="#社交网络">社交网络</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n499"><a class="md-toc-inner" href="#社交网络挖掘的任务">社交网络挖掘的任务</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n477"><a class="md-toc-inner" href="#73-情感分析与挖掘">7.3 情感分析与挖掘</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n509"><a class="md-toc-inner" href="#情感分析的应用">情感分析的应用</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n511"><a class="md-toc-inner" href="#情感分类的任务">情感分类的任务</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n516"><a class="md-toc-inner" href="#情感分类方法">情感分类方法</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n479"><a class="md-toc-inner" href="#74-研究实例">7.4 研究实例</a></span></p></div><h2><a name="chap1-绪论" class="md-header-anchor"></a><span>Chap1 绪论</span></h2><h3><a name="计算社会学典型案例" class="md-header-anchor"></a><span>计算社会学典型案例 </span></h3><ul><li><span>社交网络</span></li><li><span>电子邮件通信网络</span></li><li><span>美国大选网络</span></li><li><span>网络行为及其动力学：复杂系统连通性，包括结构层面连通性和行为层面连通性</span></li><li><span>社会交换，社会中的权力分析</span></li></ul><h2><a name="chap2-图论" class="md-header-anchor"></a><span>Chap2 图论</span></h2><h3><a name="21-人群与网络" class="md-header-anchor"></a><span>2.1 人群与网络</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426165710653.png" alt="image-20220426165710653" style="zoom:50%;" /></p><h3><a name="22-网络与图" class="md-header-anchor"></a><span>2.2 网络与图</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426165749050.png" alt="image-20220426165749050" style="zoom:50%;" /></p><h3><a name="23-路径连通图连通分量" class="md-header-anchor"></a><span>2.3 路径、连通图、连通分量</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426165833479.png" alt="image-20220426165833479" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426174137821.png" alt="image-20220426174137821" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426174010703.png" alt="image-20220426174010703" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426174058028.png" alt="image-20220426174058028" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426174115846.png" alt="image-20220426174115846" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="24-广度优先搜索" class="md-header-anchor"></a><span>2.4 广度优先搜索</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426174240782.png" alt="image-20220426174240782" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426174305191.png" alt="image-20220426174305191" style="zoom:50%;" /></p><h2><a name="chap3-博弈论" class="md-header-anchor"></a><span>Chap3 博弈论</span></h2><h3><a name="31-博弈论基本概念" class="md-header-anchor"></a><span>3.1 博弈论基本概念</span></h3><h4><a name="三要素" class="md-header-anchor"></a><span>三要素：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426175901433.png" alt="image-20220426175901433" style="zoom:50%;" /></p><h4><a name="假设" class="md-header-anchor"></a><span>假设：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426175924119.png" alt="image-20220426175924119" style="zoom:50%;" /></p><h4><a name="囚徒困境" class="md-header-anchor"></a><span>囚徒困境：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426180946810.png" alt="image-20220426180946810" style="zoom:50%;" /></p><h4><a name="兴奋剂博弈" class="md-header-anchor"></a><span>兴奋剂博弈：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426181017086.png" alt="image-20220426181017086" style="zoom:50%;" /></p><h4><a name="最佳应对" class="md-header-anchor"></a><span>最佳应对：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426181151972.png" alt="image-20220426181151972" style="zoom:50%;" /></p><p><span>占优策略 vs 最佳应对：占优策略是不论对方怎么选，我选这个都是最好的。而最佳应对是已经知道对方选了某个选择，这时我选这个是最好的。</span></p><h4><a name="严格最佳应对" class="md-header-anchor"></a><span>严格最佳应对：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426181405995.png" alt="image-20220426181405995" style="zoom:50%;" /></p><p><span>ps:严格最佳应对是大于，最佳应对是大于等于。</span></p><h4><a name="占优策略以及严格占优策略" class="md-header-anchor"></a><span>占优策略以及严格占优策略：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426181655992.png" alt="image-20220426181655992" style="zoom:50%;" /></p><p><span>ps：并非每个场景对于每个人都会有严格最有策略。</span></p><h4><a name="纳什均衡" class="md-header-anchor"></a><span>纳什均衡</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426184820273.png" alt="image-20220426184820273" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426185050676.png" alt="image-20220426185050676" style="zoom:50%;" /></p><h3><a name="32-几种典型的博弈类型" class="md-header-anchor"></a><span>3.2 几种典型的博弈类型</span></h3><h4><a name="协调博弈不对等协调博弈" class="md-header-anchor"></a><span>协调博弈&amp;不对等协调博弈</span></h4><p><span>简单来说就是协调博弈描述存在多个收益相同的纳什均衡，此时可以引入外部条件来使其变为一个不对等协调博弈，以此来选择受益更高的一个选择。</span></p><p><img src="计算社会学知识点整理.assets/image-20220426185252484.png" referrerpolicy="no-referrer" alt="image-20220426185252484"></p><h4><a name="猎鹿博弈考试和报告的博弈就是一个猎鹿博弈）" class="md-header-anchor"></a><span>猎鹿博弈：（考试和报告的博弈就是一个猎鹿博弈）</span></h4><p><span>简单来说就是不合作也仍然会出现每一个参与方都有收益的情况，只不过合作的话集体的收益会更多。</span></p><p><img src="计算社会学知识点整理.assets/image-20220426185506278.png" alt="image-20220426185506278" style="zoom:50%;" /></p><h4><a name="鹰鸽博弈" class="md-header-anchor"></a><span>鹰鸽博弈：</span></h4><p><span>与猎鹿博弈不同，这次单干的收益会比合作的收益更大。</span></p><p><img src="计算社会学知识点整理.assets/image-20220426185809205.png" alt="image-20220426185809205" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426185830417.png" alt="image-20220426185830417" style="zoom:50%;" /></p><h4><a name="混合策略均衡" class="md-header-anchor"></a><span>混合策略均衡：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426190829262.png" alt="image-20220426190829262" style="zoom:50%;" /></p><p><span>ps：同样的一个场景，可能会同时存在纯策略均衡以及混合策略均衡。</span></p><p><img src="计算社会学知识点整理.assets/image-20220426192135398.png" alt="image-20220426192135398" style="zoom:50%;" /></p><h4><a name="帕累托最优" class="md-header-anchor"></a><span>帕累托最优</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426202310670.png" alt="image-20220426202310670" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426202330215.png" alt="image-20220426202330215" style="zoom:50%;" /></p><h4><a name="社会最优" class="md-header-anchor"></a><span>社会最优</span></h4><h3><a name="33-情景-博弈-求解" class="md-header-anchor"></a><span>3.3 情景-&gt;博弈-&gt;求解</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426192639484.png" alt="image-20220426192639484" style="zoom:50%;" /></p><h2><a name="chap4-社会网络计算" class="md-header-anchor"></a><span>Chap4 社会网络计算</span></h2><h3><a name="41-三元闭包" class="md-header-anchor"></a><span>4.1 三元闭包</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426230010583.png" referrerpolicy="no-referrer" alt="image-20220426230010583"></p><h4><a name="聚集系数" class="md-header-anchor"></a><span>聚集系数</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426203034308.png" alt="image-20220426203034308" style="zoom:50%;" /></p><h3><a name="42-强联系与弱联系" class="md-header-anchor"></a><span>4.2 强联系与弱联系</span></h3><h4><a name="弱联系" class="md-header-anchor"></a><span>弱联系</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426203302254.png" alt="image-20220426203302254" style="zoom:50%;" /></p><h4><a name="强三元闭包性质" class="md-header-anchor"></a><span>强三元闭包性质</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426230135374.png" referrerpolicy="no-referrer" alt="image-20220426230135374"></p><p><img src="计算社会学知识点整理.assets/image-20220426203338071.png" alt="image-20220426203338071" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426203409366.png" alt="image-20220426203409366" style="zoom:50%;" /></p><h4><a name="邻里重叠度" class="md-header-anchor"></a><span>邻里重叠度</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426203752633.png" alt="image-20220426203752633" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="43-同质现象" class="md-header-anchor"></a><span>4.3 同质现象</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426230318469.png" referrerpolicy="no-referrer" alt="image-20220426230318469"></p><h4><a name="社会归属网络" class="md-header-anchor"></a><span>社会归属网络</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426230401462.png" alt="image-20220426230401462" style="zoom:50%;" /></p><h4><a name="图划分算法" class="md-header-anchor"></a><span>图划分算法</span></h4><p><span>GN：最先删除介数最高的边</span></p><h4><a name="介数的计算方法" class="md-header-anchor"></a><span>介数的计算方法</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426232303014.png" alt="image-20220426232303014" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426232318476.png" alt="image-20220426232318476" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426232452121.png" alt="image-20220426232452121" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="44-正关系与负关系" class="md-header-anchor"></a><span>4.4 正关系与负关系</span></h3><p><img src="计算社会学知识点整理.assets/image-20220426232630461.png" alt="image-20220426232630461" style="zoom:50%;" /></p><h4><a name="平衡定理" class="md-header-anchor"></a><span>平衡定理</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426232722903.png" alt="image-20220426232722903" style="zoom:50%;" /></p><h4><a name="弱平衡定理" class="md-header-anchor"></a><span>弱平衡定理</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426232755854.png" alt="image-20220426232755854" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="45-链接分析" class="md-header-anchor"></a><span>4.5 链接分析</span></h3><h4><a name="中枢和权威" class="md-header-anchor"></a><span>中枢和权威</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426233133926.png" alt="image-20220426233133926" style="zoom:50%;" /></p><h4><a name="更新算法" class="md-header-anchor"></a><span>更新算法</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426233403929.png" alt="image-20220426233403929" style="zoom:50%;" /></p><h4><a name="pagerank实例" class="md-header-anchor"></a><span>PageRank实例</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426233533732.png" alt="image-20220426233533732" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220426233550644.png" alt="image-20220426233550644" style="zoom:50%;" /></p><h4><a name="链接分析小结" class="md-header-anchor"></a><span>链接分析小结</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426233634183.png" alt="image-20220426233634183" style="zoom:50%;" /></p><h2><a name="chap5-市场中的计算" class="md-header-anchor"></a><span>Chap5 市场中的计算</span></h2><h3><a name="51-匹配市场" class="md-header-anchor"></a><span>5.1 匹配市场</span></h3><h4><a name="完美匹配" class="md-header-anchor"></a><span>完美匹配</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426235516894.png" alt="image-20220426235516894" style="zoom:50%;" /></p><h4><a name="受限组" class="md-header-anchor"></a><span>受限组</span></h4><p><img src="计算社会学知识点整理.assets/image-20220426235951740.png" alt="image-20220426235951740" style="zoom:50%;" /></p><h4><a name="市场清仓价格的形成过程" class="md-header-anchor"></a><span>市场清仓价格的形成过程</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427000446036.png" alt="image-20220427000446036" style="zoom:50%;" /></p><p><span>ps：清仓价格的不唯一性：</span></p><p><img src="计算社会学知识点整理.assets/image-20220427000516152.png" alt="image-20220427000516152" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="52-网络中的议价以及权力" class="md-header-anchor"></a><span>5.2 网络中的议价以及权力</span></h3><h4><a name="社会交换" class="md-header-anchor"></a><span>社会交换</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427001644223.png" alt="image-20220427001644223" style="zoom:50%;" /></p><h4><a name="关系的价值" class="md-header-anchor"></a><span>关系的价值</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427001706832.png" alt="image-20220427001706832" style="zoom:50%;" /></p><h4><a name="外部选项纳什议价解" class="md-header-anchor"></a><span>外部选项&amp;纳什议价解</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427002132671.png" alt="image-20220427002132671" style="zoom:50%;" /></p><h4><a name="稳定结果" class="md-header-anchor"></a><span>稳定结果</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427002200151.png" alt="image-20220427002200151" style="zoom:50%;" /></p><h4><a name="平衡结果" class="md-header-anchor"></a><span>平衡结果</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427002221535.png" alt="image-20220427002221535" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427002239359.png" alt="image-20220427002239359" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427002305963.png" alt="image-20220427002305963" style="zoom:50%;" /></p><h2><a name="chap6-网络动力学" class="md-header-anchor"></a><span>Chap6 网络动力学</span></h2><h3><a name="61-网络中的级联行为" class="md-header-anchor"></a><span>6.1 网络中的级联行为</span></h3><p><span>随大流现象</span></p><h4><a name="新事物传播的门槛" class="md-header-anchor"></a><span>新事物传播的门槛</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427091910063.png" alt="image-20220427091910063" style="zoom:50%;" /></p><h4><a name="聚簇" class="md-header-anchor"></a><span>聚簇</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427092306540.png" alt="image-20220427092306540" style="zoom:50%;" /></p><h4><a name="聚簇和级联的关系" class="md-header-anchor"></a><span>聚簇和级联的关系：</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427092414868.png" alt="image-20220427092414868" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="62-幂律以及富者更富现象" class="md-header-anchor"></a><span>6.2 幂律以及富者更富现象</span></h3><h4><a name="幂律分布" class="md-header-anchor"></a><span>幂律分布</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427092523457.png" alt="image-20220427092523457" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427092632175.png" alt="image-20220427092632175" style="zoom:50%;" /></p><p><span>ps：幂律分布反应的是网页入度量的规律</span></p><p><img src="计算社会学知识点整理.assets/image-20220427092716309.png" alt="image-20220427092716309" style="zoom:50%;" /></p><h4><a name="幂律的基本特征" class="md-header-anchor"></a><span>幂律的基本特征</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427092852952.png" alt="image-20220427092852952" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427092949960.png" alt="image-20220427092949960" style="zoom:50%;" /></p><h4><a name="长尾效应" class="md-header-anchor"></a><span>长尾效应</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427094252227.png" alt="image-20220427094252227" style="zoom:50%;" /></p><h4><a name="长尾效应与营销策略" class="md-header-anchor"></a><span>长尾效应与营销策略</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427094228332.png" alt="image-20220427094228332" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427094114058.png" alt="image-20220427094114058" style="zoom:50%;" /></p><h3><a name="63-小世界现象" class="md-header-anchor"></a><span>6.3 小世界现象</span></h3><p><img src="计算社会学知识点整理.assets/image-20220427094519892.png" alt="image-20220427094519892" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427094614008.png" alt="image-20220427094614008" style="zoom:50%;" /></p><h2><a name="chap7-社交媒体挖掘与理解" class="md-header-anchor"></a><span>Chap7 社交媒体挖掘与理解</span></h2><h3><a name="71-社交媒体挖掘基本概念" class="md-header-anchor"></a><span>7.1 社交媒体挖掘基本概念</span></h3><p><img src="计算社会学知识点整理.assets/image-20220427094732348.png" alt="image-20220427094732348" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427094748091.png" alt="image-20220427094748091" style="zoom:50%;" /></p><h4><a name="社交媒体挖掘的挑战" class="md-header-anchor"></a><span>社交媒体挖掘的挑战</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427094859810.png" alt="image-20220427094859810" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427094934828.png" alt="image-20220427094934828" style="zoom:50%;" /></p><h3><a name="72-社交网络分析" class="md-header-anchor"></a><span>7.2 社交网络分析</span></h3><h4><a name="社交网络" class="md-header-anchor"></a><span>社交网络</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427100110823.png" alt="image-20220427100110823" style="zoom:50%;" /></p><h4><a name="社交网络挖掘的任务" class="md-header-anchor"></a><span>社交网络挖掘的任务</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427100138345.png" alt="image-20220427100138345" style="zoom:50%;" /></p><p>&nbsp;</p><h3><a name="73-情感分析与挖掘" class="md-header-anchor"></a><span>7.3 情感分析与挖掘</span></h3><h4><a name="情感分析的应用" class="md-header-anchor"></a><span>情感分析的应用</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427100309049.png" alt="image-20220427100309049" style="zoom:50%;" /></p><h4><a name="情感分类的任务" class="md-header-anchor"></a><span>情感分类的任务</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427100432923.png" alt="image-20220427100432923" style="zoom:50%;" /></p><h4><a name="情感分类方法" class="md-header-anchor"></a><span>情感分类方法</span></h4><p><img src="计算社会学知识点整理.assets/image-20220427100506373.png" alt="image-20220427100506373" style="zoom:50%;" /></p><p><img src="计算社会学知识点整理.assets/image-20220427100528482.png" alt="image-20220427100528482" style="zoom:50%;" /></p><h3><a name="74-研究实例" class="md-header-anchor"></a><span>7.4 研究实例</span></h3><p><img src="计算社会学知识点整理.assets/image-20220427101110756.png" alt="image-20220427101110756" style="zoom:50%;" /></p></div>
+</body>
+</html>

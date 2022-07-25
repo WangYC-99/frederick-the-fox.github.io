@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>WangYC-personal</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="王元淳 WangYC_99 西北工业大学">
+  <meta name="keywords" content="WangYC_99, Wang Yuanchun, Yuanchun Wang, WangYC, Frederick Wang, Frederick the Fox, 王元淳, wyc, NWPU, wangyuanchun">
+  <meta name="author" content="WangYC_99 wyc99@mail.nwpu.edu.cn" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon-trans.png">
+
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+</head>
+
+<body class="w3-content w3-light-gray w3-border-black" style="max-width:900px">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <h3><b>WangYC</b></h3>
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/icon-trans.png">
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+        <a href="./index.html" class="w3-bar-item w3-button">Projects</a>
+        <a href="./blogs.html" class="w3-bar-item w3-button">Blogs</a>
+        <a href="./home.html" class="w3-bar-item w3-button">Profile</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24"><b>WangYC</b></div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>More ≡ </b></a>
+    </div>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:150px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- The Projects Section -->
+
+    <div class="w3-container w3-padding-32 w3-margin-left" id="projects">
+      <h1>Projects</h1> 
+      <p>
+        I've participated in <a href="https://www.robomaster.com/">DJI Robomaster Competition</a>, <a href="https://cy.ncss.cn/index.html"> National Training Program of Innovation and Entrepreneurship for Undergraduates</a>, some course_based researches and other projects.
+      </p>
+      <h2><li>2022</li></h2>
+        <!-- Graph visualization -->
+        <h4> > Graph Visualization with pyecharts</h4>
+        <div id="b37b8806efb64cf292992006d81cc114" class="chart-container" style="max-width: 600px; width: 90%; height:300px;"></div>
+        <script>
+            var chart_b37b8806efb64cf292992006d81cc114 = echarts.init(
+                document.getElementById('b37b8806efb64cf292992006d81cc114'), 'white', {renderer: 'canvas'});
+            var option_b37b8806efb64cf292992006d81cc114 = {
+        "animation": true,
+        "animationThreshold": 2000,
+        "animationDuration": 1000,
+        "animationEasing": "cubicOut",
+        "animationDelay": 0,
+        "animationDurationUpdate": 300,
+        "animationEasingUpdate": "cubicOut",
+        "animationDelayUpdate": 0,
+        "color": [
+            "#c23531",
+            "#2f4554",
+            "#61a0a8",
+            "#d48265",
+            "#749f83",
+            "#ca8622",
+            "#bda29a",
+            "#6e7074",
+            "#546570",
+            "#c4ccd3",
+            "#f05b72",
+            "#ef5b9c",
+            "#f47920",
+            "#905a3d",
+            "#fab27b",
+            "#2a5caa",
+            "#444693",
+            "#726930",
+            "#b2d235",
+            "#6d8346",
+            "#ac6767",
+            "#1d953f",
+            "#6950a1",
+            "#918597"
+        ],
+        "series": [
+            {
+                "type": "graph",
+                "layout": "force",
+                "symbolSize": 10,
+                "circular": {
+                    "rotateLabel": false
+                },
+                "force": {
+                    "repulsion": 80,
+                    "edgeLength": 50,
+                    "gravity": 0.2
+                },
+                "label": {
+                    "show": false,
+                    "position": "top",
+                    "margin": 8
+                },
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0.2,
+                    "type": "solid"
+                },
+                "roam": true,
+                "draggable": false,
+                "focusNodeAdjacency": true,
+                "data": [
+                    {
+                        "name": "\u96f7\u751f\u5b87",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011802.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7f57\u5609\u6210",
+                        "symbolSize": 2,
+                        "draggable": "False",
+                        "value": 2,
+                        "category": "10011808.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u9648\u6625\u8f89",
+                        "symbolSize": 2,
+                        "draggable": "False",
+                        "value": 2,
+                        "category": "10011801.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7126\u4e16\u8c6a",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "HC001808",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u9b4f\u4e0a\u658c",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011805.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u53f6\u6d69\u5e06",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011808.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5f20\u5143",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "8061804.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u90dd\u8087\u94c1",
+                        "symbolSize": 2,
+                        "draggable": "False",
+                        "value": 2,
+                        "category": "9011802.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u65b9\u7a0b",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011801.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5218\u5b87\u535a",
+                        "symbolSize": 2,
+                        "draggable": "False",
+                        "value": 2,
+                        "category": "10011802.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5218\u65ed\u4e1c",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011804.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u90dd\u4e16\u5143",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011804.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u90ed\u817e\u9633",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011805.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u8303\u5f69\u59ae",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "12041803.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5218\u660e\u6e05",
+                        "symbolSize": 4,
+                        "draggable": "False",
+                        "value": 4,
+                        "category": "HC001901",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u502a\u822a",
+                        "symbolSize": 4,
+                        "draggable": "False",
+                        "value": 4,
+                        "category": "HC001901",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u738b\u6db5",
+                        "symbolSize": 4,
+                        "draggable": "False",
+                        "value": 4,
+                        "category": "HC001903",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u738b\u5143\u6df3",
+                        "symbolSize": 7,
+                        "draggable": "False",
+                        "value": 7,
+                        "category": "HC001903",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7533\u4e16\u4e1c",
+                        "symbolSize": 11,
+                        "draggable": "False",
+                        "value": 11,
+                        "category": "10011907.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u9ec4\u8d75\u7fd4",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10011907.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5218\u5609\u8f69",
+                        "symbolSize": 7,
+                        "draggable": "False",
+                        "value": 7,
+                        "category": "10011907.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u8212\u79cb\u8c6a",
+                        "symbolSize": 5,
+                        "draggable": "False",
+                        "value": 5,
+                        "category": "10011907.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6c5f\u7949\u6052",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10011907.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u90ed\u4e00\u51e1",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011904.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6881\u6850\u5609",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011903.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7c73\u7693\u9633",
+                        "symbolSize": 5,
+                        "draggable": "False",
+                        "value": 5,
+                        "category": "10011906.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6768\u6797\u6c5f",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u9648\u96c5\u5ba3",
+                        "symbolSize": 13,
+                        "draggable": "False",
+                        "value": 13,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u4f55\u6021\u6167",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10011902.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u7476",
+                        "symbolSize": 13,
+                        "draggable": "False",
+                        "value": 13,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6731\u8d8a",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6613\u742a\u8018",
+                        "symbolSize": 23,
+                        "draggable": "False",
+                        "value": 23,
+                        "category": "10011901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u671d\u9633",
+                        "symbolSize": 9,
+                        "draggable": "False",
+                        "value": 9,
+                        "category": "10011904.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u6b63\u6db5",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u79e6\u8c26",
+                        "symbolSize": 8,
+                        "draggable": "False",
+                        "value": 8,
+                        "category": "10011901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u962e\u4fca\u6770",
+                        "symbolSize": 5,
+                        "draggable": "False",
+                        "value": 5,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6210\u8f89",
+                        "symbolSize": 5,
+                        "draggable": "False",
+                        "value": 5,
+                        "category": "10011901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u859b\u8bfa\u5bd2",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10011906.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7f57\u8bd7\u598d",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10011901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5f20\u539f\u6ea5",
+                        "symbolSize": 12,
+                        "draggable": "False",
+                        "value": 12,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u660a\u5b87",
+                        "symbolSize": 13,
+                        "draggable": "False",
+                        "value": 13,
+                        "category": "10011904.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u5947",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10011904.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7f57\u817e\u4e91",
+                        "symbolSize": 9,
+                        "draggable": "False",
+                        "value": 9,
+                        "category": "10011906.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u7504\u57f9\u8499",
+                        "symbolSize": 5,
+                        "draggable": "False",
+                        "value": 5,
+                        "category": "10011904.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6731\u8fea",
+                        "symbolSize": 7,
+                        "draggable": "False",
+                        "value": 7,
+                        "category": "10011902.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6234\u987a",
+                        "symbolSize": 9,
+                        "draggable": "False",
+                        "value": 9,
+                        "category": "10011905.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u80e1\u5bb6\u8c6a",
+                        "symbolSize": 5,
+                        "draggable": "False",
+                        "value": 5,
+                        "category": "10011902.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u627f\u6b23",
+                        "symbolSize": 7,
+                        "draggable": "False",
+                        "value": 7,
+                        "category": "10011902.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u738b\u58eb\u5b81",
+                        "symbolSize": 8,
+                        "draggable": "False",
+                        "value": 8,
+                        "category": "10011906.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5409\u5f20\u752b",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10051901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u96f7\u7b11\u8bed",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10051901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u6d69\u6d0b",
+                        "symbolSize": 18,
+                        "draggable": "False",
+                        "value": 18,
+                        "category": "10051901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u67ef\u8fb0",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10051901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u5218\u4f73\u798f",
+                        "symbolSize": 6,
+                        "draggable": "False",
+                        "value": 6,
+                        "category": "10051901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u4f0d\u71b9\u6587",
+                        "symbolSize": 8,
+                        "draggable": "False",
+                        "value": 8,
+                        "category": "10051901.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u674e\u946b\u5803",
+                        "symbolSize": 2,
+                        "draggable": "False",
+                        "value": 2,
+                        "category": "10042001.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u6f58\u661f\u5b87",
+                        "symbolSize": 3,
+                        "draggable": "False",
+                        "value": 3,
+                        "category": "10052001.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u80e1\u7199",
+                        "symbolSize": 1,
+                        "draggable": "False",
+                        "value": 1,
+                        "category": "10012007.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    },
+                    {
+                        "name": "\u738b\u51ac\u829d",
+                        "symbolSize": 3,
+                        "draggable": "False",
+                        "value": 3,
+                        "category": "10012007.0",
+                        "label": {
+                            "normal": {
+                                "show": "True"
+                            }
+                        }
+                    }
+                ],
+                "categories": [
+                    {
+                        "name": "10011802.0"
+                    },
+                    {
+                        "name": "10011808.0"
+                    },
+                    {
+                        "name": "10011801.0"
+                    },
+                    {
+                        "name": "HC001808"
+                    },
+                    {
+                        "name": "10011805.0"
+                    },
+                    {
+                        "name": "10011808.0"
+                    },
+                    {
+                        "name": "8061804.0"
+                    },
+                    {
+                        "name": "9011802.0"
+                    },
+                    {
+                        "name": "10011801.0"
+                    },
+                    {
+                        "name": "10011802.0"
+                    },
+                    {
+                        "name": "10011804.0"
+                    },
+                    {
+                        "name": "10011804.0"
+                    },
+                    {
+                        "name": "10011805.0"
+                    },
+                    {
+                        "name": "12041803.0"
+                    },
+                    {
+                        "name": "HC001901"
+                    },
+                    {
+                        "name": "HC001901"
+                    },
+                    {
+                        "name": "HC001903"
+                    },
+                    {
+                        "name": "HC001903"
+                    },
+                    {
+                        "name": "10011907.0"
+                    },
+                    {
+                        "name": "10011907.0"
+                    },
+                    {
+                        "name": "10011907.0"
+                    },
+                    {
+                        "name": "10011907.0"
+                    },
+                    {
+                        "name": "10011907.0"
+                    },
+                    {
+                        "name": "10011904.0"
+                    },
+                    {
+                        "name": "10011903.0"
+                    },
+                    {
+                        "name": "10011906.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011902.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011901.0"
+                    },
+                    {
+                        "name": "10011901.0"
+                    },
+                    {
+                        "name": "10011904.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011901.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011901.0"
+                    },
+                    {
+                        "name": "10011906.0"
+                    },
+                    {
+                        "name": "10011901.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011904.0"
+                    },
+                    {
+                        "name": "10011904.0"
+                    },
+                    {
+                        "name": "10011906.0"
+                    },
+                    {
+                        "name": "10011904.0"
+                    },
+                    {
+                        "name": "10011902.0"
+                    },
+                    {
+                        "name": "10011905.0"
+                    },
+                    {
+                        "name": "10011902.0"
+                    },
+                    {
+                        "name": "10011902.0"
+                    },
+                    {
+                        "name": "10011906.0"
+                    },
+                    {
+                        "name": "10051901.0"
+                    },
+                    {
+                        "name": "10051901.0"
+                    },
+                    {
+                        "name": "10051901.0"
+                    },
+                    {
+                        "name": "10051901.0"
+                    },
+                    {
+                        "name": "10051901.0"
+                    },
+                    {
+                        "name": "10051901.0"
+                    },
+                    {
+                        "name": "10042001.0"
+                    },
+                    {
+                        "name": "10052001.0"
+                    },
+                    {
+                        "name": "10012007.0"
+                    },
+                    {
+                        "name": "10012007.0"
+                    }
+                ],
+                "edgeLabel": {
+                    "show": false,
+                    "position": "top",
+                    "margin": 8
+                },
+                "edgeSymbol": [
+                    null,
+                    null
+                ],
+                "edgeSymbolSize": 10,
+                "links": [
+                    {
+                        "source": "\u7f57\u5609\u6210",
+                        "target": "\u65e0"
+                    },
+                    {
+                        "source": "\u9648\u6625\u8f89",
+                        "target": "\u65e0"
+                    },
+                    {
+                        "source": "\u90dd\u8087\u94c1",
+                        "target": "\u5218\u5b87\u535a"
+                    },
+                    {
+                        "source": "\u5218\u5b87\u535a",
+                        "target": "\u90dd\u8087\u94c1"
+                    },
+                    {
+                        "source": "\u5218\u660e\u6e05",
+                        "target": "\u502a\u822a"
+                    },
+                    {
+                        "source": "\u5218\u660e\u6e05",
+                        "target": "\u738b\u5143\u6df3"
+                    },
+                    {
+                        "source": "\u5218\u660e\u6e05",
+                        "target": "\u738b\u6db5"
+                    },
+                    {
+                        "source": "\u502a\u822a",
+                        "target": "\u5218\u660e\u6e05"
+                    },
+                    {
+                        "source": "\u502a\u822a",
+                        "target": "\u738b\u5143\u6df3"
+                    },
+                    {
+                        "source": "\u502a\u822a",
+                        "target": "\u738b\u6db5"
+                    },
+                    {
+                        "source": "\u738b\u6db5",
+                        "target": "\u738b\u5143\u6df3"
+                    },
+                    {
+                        "source": "\u738b\u6db5",
+                        "target": "\u502a\u822a"
+                    },
+                    {
+                        "source": "\u738b\u6db5",
+                        "target": "\u5218\u660e\u6e05"
+                    },
+                    {
+                        "source": "\u738b\u5143\u6df3",
+                        "target": "\u5218\u660e\u6e05"
+                    },
+                    {
+                        "source": "\u738b\u5143\u6df3",
+                        "target": "\u502a\u822a"
+                    },
+                    {
+                        "source": "\u738b\u5143\u6df3",
+                        "target": "\u738b\u6db5"
+                    },
+                    {
+                        "source": "\u738b\u5143\u6df3",
+                        "target": "\u5f20\u5143"
+                    },
+                    {
+                        "source": "\u738b\u5143\u6df3",
+                        "target": "\u738b\u58eb\u5b81"
+                    },
+                    {
+                        "source": "\u738b\u5143\u6df3",
+                        "target": "\u7504\u57f9\u8499"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u9ec4\u8d75\u7fd4"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u5218\u5609\u8f69"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u8212\u79cb\u8c6a"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u6c5f\u7949\u6052"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u7533\u4e16\u4e1c",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u9ec4\u8d75\u7fd4",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u9ec4\u8d75\u7fd4",
+                        "target": "\u5218\u5609\u8f69"
+                    },
+                    {
+                        "source": "\u9ec4\u8d75\u7fd4",
+                        "target": "\u8212\u79cb\u8c6a"
+                    },
+                    {
+                        "source": "\u9ec4\u8d75\u7fd4",
+                        "target": "\u6c5f\u7949\u6052"
+                    },
+                    {
+                        "source": "\u9ec4\u8d75\u7fd4",
+                        "target": "\u962e\u4fca\u6770"
+                    },
+                    {
+                        "source": "\u5218\u5609\u8f69",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u5218\u5609\u8f69",
+                        "target": "\u9ec4\u8d75\u7fd4"
+                    },
+                    {
+                        "source": "\u5218\u5609\u8f69",
+                        "target": "\u6c5f\u7949\u6052"
+                    },
+                    {
+                        "source": "\u5218\u5609\u8f69",
+                        "target": "\u8212\u79cb\u8c6a"
+                    },
+                    {
+                        "source": "\u5218\u5609\u8f69",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u5218\u5609\u8f69",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u8212\u79cb\u8c6a",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u8212\u79cb\u8c6a",
+                        "target": "\u5218\u5609\u8f69"
+                    },
+                    {
+                        "source": "\u8212\u79cb\u8c6a",
+                        "target": "\u9ec4\u8d75\u7fd4"
+                    },
+                    {
+                        "source": "\u8212\u79cb\u8c6a",
+                        "target": "\u6c5f\u7949\u6052"
+                    },
+                    {
+                        "source": "\u6c5f\u7949\u6052",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u6c5f\u7949\u6052",
+                        "target": "\u9ec4\u8d75\u7fd4"
+                    },
+                    {
+                        "source": "\u6c5f\u7949\u6052",
+                        "target": "\u5218\u5609\u8f69"
+                    },
+                    {
+                        "source": "\u6c5f\u7949\u6052",
+                        "target": "\u8212\u79cb\u8c6a"
+                    },
+                    {
+                        "source": "\u6c5f\u7949\u6052",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u7c73\u7693\u9633",
+                        "target": "\u6881\u6850\u5609"
+                    },
+                    {
+                        "source": "\u7c73\u7693\u9633",
+                        "target": "\u738b\u58eb\u5b81"
+                    },
+                    {
+                        "source": "\u7c73\u7693\u9633",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u7c73\u7693\u9633",
+                        "target": "\u7504\u57f9\u8499"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u4f55\u6021\u6167"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u5218\u5609\u8f69"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u6768\u6797\u6c5f"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u6234\u987a"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u9648\u96c5\u5ba3",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u4f55\u6021\u6167",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u4f55\u6021\u6167",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u4f55\u6021\u6167",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u4f55\u6021\u6167",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u4f55\u6021\u6167",
+                        "target": "\u6768\u6797\u6c5f"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u4f55\u6021\u6167"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u6234\u987a"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u6210\u8f89"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u6768\u6797\u6c5f"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u674e\u7476",
+                        "target": "\u6881\u6850\u5609"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u6881\u6850\u5609"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u4f55\u6021\u6167"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u6731\u8d8a"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u674e\u671d\u9633"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u674e\u6b63\u6db5"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u962e\u4fca\u6770"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u6210\u8f89"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u859b\u8bfa\u5bd2"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u7f57\u8bd7\u598d"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u738b\u58eb\u5b81"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u674e\u67ef\u8fb0"
+                    },
+                    {
+                        "source": "\u6613\u742a\u8018",
+                        "target": "\u5218\u4f73\u798f"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u674e\u6b63\u6db5"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u962e\u4fca\u6770"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u674e\u671d\u9633",
+                        "target": "\u7504\u57f9\u8499"
+                    },
+                    {
+                        "source": "\u674e\u6b63\u6db5",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u674e\u6b63\u6db5",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u674e\u6b63\u6db5",
+                        "target": "\u962e\u4fca\u6770"
+                    },
+                    {
+                        "source": "\u674e\u6b63\u6db5",
+                        "target": "\u674e\u671d\u9633"
+                    },
+                    {
+                        "source": "\u674e\u6b63\u6db5",
+                        "target": "\u674e\u627f\u6b23"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u674e\u6b63\u6db5"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u962e\u4fca\u6770"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u674e\u671d\u9633"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u6210\u8f89"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u7f57\u8bd7\u598d"
+                    },
+                    {
+                        "source": "\u79e6\u8c26",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u962e\u4fca\u6770",
+                        "target": "\u674e\u6b63\u6db5"
+                    },
+                    {
+                        "source": "\u962e\u4fca\u6770",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u962e\u4fca\u6770",
+                        "target": "\u674e\u671d\u9633"
+                    },
+                    {
+                        "source": "\u962e\u4fca\u6770",
+                        "target": "\u9ec4\u8d75\u7fd4"
+                    },
+                    {
+                        "source": "\u6210\u8f89",
+                        "target": "\u6881\u6850\u5609"
+                    },
+                    {
+                        "source": "\u6210\u8f89",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u6210\u8f89",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u6210\u8f89",
+                        "target": "\u7f57\u8bd7\u598d"
+                    },
+                    {
+                        "source": "\u859b\u8bfa\u5bd2",
+                        "target": "\u7f57\u8bd7\u598d"
+                    },
+                    {
+                        "source": "\u859b\u8bfa\u5bd2",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u859b\u8bfa\u5bd2",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u859b\u8bfa\u5bd2",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u859b\u8bfa\u5bd2",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u7f57\u8bd7\u598d",
+                        "target": "\u859b\u8bfa\u5bd2"
+                    },
+                    {
+                        "source": "\u7f57\u8bd7\u598d",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u7f57\u8bd7\u598d",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u7f57\u8bd7\u598d",
+                        "target": "\u6210\u8f89"
+                    },
+                    {
+                        "source": "\u7f57\u8bd7\u598d",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u6234\u987a"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u80e1\u5bb6\u8c6a"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u4f0d\u71b9\u6587"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u5f20\u539f\u6ea5",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u7504\u57f9\u8499"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u674e\u627f\u6b23"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u674e\u660a\u5b87",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u738b\u58eb\u5b81"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u7c73\u7693\u9633"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u674e\u627f\u6b23"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u7f57\u817e\u4e91",
+                        "target": "\u859b\u8bfa\u5bd2"
+                    },
+                    {
+                        "source": "\u7504\u57f9\u8499",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u7504\u57f9\u8499",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u7504\u57f9\u8499",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u7504\u57f9\u8499",
+                        "target": "\u738b\u5143\u6df3"
+                    },
+                    {
+                        "source": "\u6731\u8fea",
+                        "target": "\u80e1\u5bb6\u8c6a"
+                    },
+                    {
+                        "source": "\u6731\u8fea",
+                        "target": "\u674e\u627f\u6b23"
+                    },
+                    {
+                        "source": "\u6731\u8fea",
+                        "target": "\u6234\u987a"
+                    },
+                    {
+                        "source": "\u6731\u8fea",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u6731\u8fea",
+                        "target": "\u4f55\u6021\u6167"
+                    },
+                    {
+                        "source": "\u6731\u8fea",
+                        "target": "\u859b\u8bfa\u5bd2"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u80e1\u5bb6\u8c6a"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u674e\u627f\u6b23"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u6234\u987a",
+                        "target": "\u5434\u5947"
+                    },
+                    {
+                        "source": "\u80e1\u5bb6\u8c6a",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u80e1\u5bb6\u8c6a",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u80e1\u5bb6\u8c6a",
+                        "target": "\u674e\u627f\u6b23"
+                    },
+                    {
+                        "source": "\u80e1\u5bb6\u8c6a",
+                        "target": "\u6234\u987a"
+                    },
+                    {
+                        "source": "\u674e\u627f\u6b23",
+                        "target": "\u80e1\u5bb6\u8c6a"
+                    },
+                    {
+                        "source": "\u674e\u627f\u6b23",
+                        "target": "\u6234\u987a"
+                    },
+                    {
+                        "source": "\u674e\u627f\u6b23",
+                        "target": "\u6731\u8fea"
+                    },
+                    {
+                        "source": "\u674e\u627f\u6b23",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u674e\u627f\u6b23",
+                        "target": "\u738b\u58eb\u5b81"
+                    },
+                    {
+                        "source": "\u674e\u627f\u6b23",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u6881\u6850\u5609"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u738b\u5143\u6df3"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u5f20\u5143"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u6f58\u661f\u5b87"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u738b\u58eb\u5b81",
+                        "target": "\u7c73\u7693\u9633"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u5218\u4f73\u798f"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u674e\u67ef\u8fb0"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u5409\u5f20\u752b"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u4f0d\u71b9\u6587"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u7533\u4e16\u4e1c"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u9648\u96c5\u5ba3"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u90ed\u4e00\u51e1"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u674e\u660a\u5b87"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u7f57\u8bd7\u598d"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u7f57\u817e\u4e91"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u79e6\u8c26"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u674e\u7476"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u6613\u742a\u8018"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u674e\u6d69\u6d0b",
+                        "target": "\u859b\u8bfa\u5bd2"
+                    },
+                    {
+                        "source": "\u674e\u67ef\u8fb0",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u674e\u67ef\u8fb0",
+                        "target": "\u5218\u4f73\u798f"
+                    },
+                    {
+                        "source": "\u674e\u67ef\u8fb0",
+                        "target": "\u5409\u5f20\u752b"
+                    },
+                    {
+                        "source": "\u674e\u67ef\u8fb0",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u674e\u67ef\u8fb0",
+                        "target": "\u4f0d\u71b9\u6587"
+                    },
+                    {
+                        "source": "\u5218\u4f73\u798f",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u5218\u4f73\u798f",
+                        "target": "\u674e\u67ef\u8fb0"
+                    },
+                    {
+                        "source": "\u5218\u4f73\u798f",
+                        "target": "\u5409\u5f20\u752b"
+                    },
+                    {
+                        "source": "\u5218\u4f73\u798f",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u5218\u4f73\u798f",
+                        "target": "\u4f0d\u71b9\u6587"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u5409\u5f20\u752b"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u96f7\u7b11\u8bed"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u674e\u6d69\u6d0b"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u674e\u67ef\u8fb0"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u5218\u4f73\u798f"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u5f20\u539f\u6ea5"
+                    },
+                    {
+                        "source": "\u4f0d\u71b9\u6587",
+                        "target": "\u674e\u5947"
+                    },
+                    {
+                        "source": "\u674e\u946b\u5803",
+                        "target": "\u65e0"
+                    },
+                    {
+                        "source": "\u6f58\u661f\u5b87",
+                        "target": "\u6881\u6850\u5609"
+                    },
+                    {
+                        "source": "\u6f58\u661f\u5b87",
+                        "target": "\u738b\u58eb\u5b81"
+                    },
+                    {
+                        "source": "\u738b\u51ac\u829d",
+                        "target": "\u8303\u5f69\u59ae"
+                    },
+                    {
+                        "source": "\u738b\u51ac\u829d",
+                        "target": "\u80e1\u7199"
+                    }
+                ]
+            }
+        ],
+        "legend": [
+            {
+                "data": [
+                    "10011802.0",
+                    "10011808.0",
+                    "10011801.0",
+                    "HC001808",
+                    "10011805.0",
+                    "10011808.0",
+                    "8061804.0",
+                    "9011802.0",
+                    "10011801.0",
+                    "10011802.0",
+                    "10011804.0",
+                    "10011804.0",
+                    "10011805.0",
+                    "12041803.0",
+                    "HC001901",
+                    "HC001901",
+                    "HC001903",
+                    "HC001903",
+                    "10011907.0",
+                    "10011907.0",
+                    "10011907.0",
+                    "10011907.0",
+                    "10011907.0",
+                    "10011904.0",
+                    "10011903.0",
+                    "10011906.0",
+                    "10011905.0",
+                    "10011905.0",
+                    "10011902.0",
+                    "10011905.0",
+                    "10011901.0",
+                    "10011901.0",
+                    "10011904.0",
+                    "10011905.0",
+                    "10011901.0",
+                    "10011905.0",
+                    "10011901.0",
+                    "10011906.0",
+                    "10011901.0",
+                    "10011905.0",
+                    "10011904.0",
+                    "10011904.0",
+                    "10011906.0",
+                    "10011904.0",
+                    "10011902.0",
+                    "10011905.0",
+                    "10011902.0",
+                    "10011902.0",
+                    "10011906.0",
+                    "10051901.0",
+                    "10051901.0",
+                    "10051901.0",
+                    "10051901.0",
+                    "10051901.0",
+                    "10051901.0",
+                    "10042001.0",
+                    "10052001.0",
+                    "10012007.0",
+                    "10012007.0"
+                ],
+                "selected": {
+                    "10011802.0": true,
+                    "10011808.0": true,
+                    "10011801.0": true,
+                    "HC001808": true,
+                    "10011805.0": true,
+                    "8061804.0": true,
+                    "9011802.0": true,
+                    "10011804.0": true,
+                    "12041803.0": true,
+                    "HC001901": true,
+                    "HC001903": true,
+                    "10011907.0": true,
+                    "10011904.0": true,
+                    "10011903.0": true,
+                    "10011906.0": true,
+                    "10011905.0": true,
+                    "10011902.0": true,
+                    "10011901.0": true,
+                    "10051901.0": true,
+                    "10042001.0": true,
+                    "10052001.0": true,
+                    "10012007.0": true
+                },
+                "show": false,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14
+            }
+        ],
+        "tooltip": {
+            "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "showContent": true,
+            "alwaysShowContent": false,
+            "showDelay": 0,
+            "hideDelay": 100,
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0,
+            "padding": 5
+        },
+        "title": [
+            {
+                "text": "Class Social Network Graph",
+                "padding": 5,
+                "itemGap": 10
+            }
+        ]
+    };
+            chart_b37b8806efb64cf292992006d81cc114.setOption(option_b37b8806efb64cf292992006d81cc114);
+        </script>
+        <p class="w3-justify">
+        <img style="max-height: 20px;" src="./images/github.jpg">
+        <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/Graph_Visualization">xlsx2json & graph making</a> 
+        </p>
+        <p class="w3-justify">
+          &nbsp&nbspEcharts is an open source library from Baidu for data visualization in javascript. It has awesome demo pages. I found this useful repositry and use it to visualize the Social Network Graph of the class of Computational Social Science course.
+        </p> 
+        <p><a href="./blogPages/解析xlsx生成json + pyecharts可视化.html">blog: pyechart实现可视化</a></p>
+        <h4>&nbsp</h4>
+        <!-- A-Tune -->
+        <h4> > Tuning Pytorch Training with <a href="https://www.huawei.com/cn/">HUAWEI</a> <a href="https://www.openeuler.org/zh/">OpenEuler</a> <a href="https://www.openeuler.org/zh/other/projects/atune/">A-Tune</a> engine</h4>
+        <img style="max-width:700px; width: 85%;" class="w3-padding-16" src="images/cifar.png"> 
+        <img style="max-width: 700px; width: 85%;" src="/images/a-tune-huawei.png">
+        <p class="w3-justify">
+        <img style="max-height: 20px;" src="./images/github.jpg">
+        <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/CIFAR-10_train">Training without A-Tune</a> | <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/a-tune_pytorch_train">training using A-Tune</a>
+        </p>
+        <p class="w3-justify">
+          &nbsp&nbspA-Tune is an OS tuning engine based on AI. I'm extremely surprised by this idea of using operating system to tuning services for the Users. I made an example of using A-Tune to tuning the <a class="w3-text-blue">batch-size, optimizer and learning-rate</a> of the pytorch training (taking the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10 DATASET</a> as an example). The result is quite cool that it outperforms the result without tuning by 6.35% in 30 turns.
+        </p> 
+
+        <h2><li>2021</li></h2>
+      
+        <!-- RM -->
+        <h4> > DJI RoboMaster | Engineer Robot Automatic Target Recognition and Pose Refining</h4>
+        <img style="width: 85%; max-width: 300px;"src="images/mine.gif"> &nbsp&nbsp <img style="width: 85%; max-width: 380px;"src="images/detect.jpg">
+        <p class="w3-justify">
+          <img style="max-height: 20px;" src="./images/github.jpg">
+          <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/realsense-pcl">real-time PCL Code Repositry</a>
+        </p>
+        <p class="w3-justify">
+          &nbsp&nbspDJI RoboMaster is truly an amazing competition for collegers. I believe the experience preparing for this competition with my teamates will absolutly be the most unforgetable ones during my life time. In this project, I use <a class="w3-text-red">Computer Vision</a> algorithms to regognize the featured items in the environment(the golden block in the picture) and use <a class="w3-text-red">Robot Control</a> algorithms and <a class="w3-text-red">ICT</a> designing to let the robot automatically refine its pose to grab the golden block. 
+        </p> 
+
+        <h1>&nbsp</h1>
+
+        <!-- RM -->
+        <h4> > The projects before is preparing</h4>
+
+        
+  
+    </div>
+
+    <!-- Bottom Section-->
+    <div class="w3-gray w3-padding-24 w3-center" >
+      <p class="w3-opacity ">copyright©️2021 wyc99@mail.nwpu.edu.cn AllRightsReserved.</p>
+      <p class="w3-opacity "><a href="https://beian.miit.gov.cn/">冀ICP备2022000563</a>｜ Powered by w3.css</p>
+    </div>
+
+  
+  <script>
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
+</body>
+
+</html>
