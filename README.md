@@ -1,2 +1,2 @@
 # Welcome
-this is WangYC's Personal Webset
+this is WangYC's Personal Webpage
